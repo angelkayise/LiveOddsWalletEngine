@@ -1,0 +1,22 @@
+@LiveOdds_HostAddress = http://localhost:5189
+
+### 1. View Live Ticking Odds (Run twice 5 seconds apart to see odds shift!)
+GET {{LiveOdds_HostAddress}}/api/events
+
+###
+
+### 2. Check Starting Wallet Balance (R10,000.00)
+GET {{LiveOdds_HostAddress}}/api/wallets/angel_trader
+
+###
+
+### 3. Place Atomic Bet (R500.00 on Sharks HOME)
+POST {{LiveOdds_HostAddress}}/api/bets
+Content-Type: application/json
+
+{
+  "username": "angel_trader",
+  "eventId": 1,
+  "selection": "HOME",
+  "stake": 500.00
+}

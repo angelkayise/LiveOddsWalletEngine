@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LiveOddsWallet.Api/LiveOddsWallet.Api.csproj" />
+  <Project Path="LiveOddsWallet.Tests/LiveOddsWallet.Tests.csproj" />
+</Solution>
